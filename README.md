@@ -5,6 +5,7 @@ Docker images of Asterisk 13, 14 or 15 based on Centos 7 image.
 It is clean Asterisk without FastAGI which should run in separate containers.
 
 ###Simple Tags
+
 15, latest ([latest](https://github.com/Autor69/docker-asterisk-centos/blob/master/15/Dockerfile))
 
 14 ([14](https://github.com/Autor69/docker-asterisk-centos/blob/master/14/Dockerfile))
