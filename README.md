@@ -18,10 +18,10 @@ Because of huge port range requirement of asterisk RTP ports it is recommended t
 
 ### Usage
 
-Basic usage
+Basic usage:
 
 ```shell
-docker run -d --name asterisk --network=host autor69/asterisk-centos
+docker run -d --name asterisk --network=host autor69/asterisk
 ```
 
 In order to use your own configuration files mount them into standard foler /etc/asterisk folder
@@ -30,11 +30,11 @@ In order to use your own configuration files mount them into standard foler /etc
 docker run -d --name asterisk \
               --network=host \
               -v /etc/asterisk:/etc/asterisk
-autor69/asterisk-centos
+autor69/asterisk
 ```
 
 #### Logging into Asterisk Console
-Basic usage
+Basic usage:
 
 ```shell
 docker exec -it asterisk asterisk -rvvvvvvvvv
