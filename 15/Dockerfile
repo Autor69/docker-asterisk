@@ -8,7 +8,7 @@ ENV JANSSON_VERSION 2.11
 RUN yum update -y && \
  yum install kernel-headers gcc gcc-c++ cpp ncurses ncurses-devel libxml2 autoconf automake libtool \
  libxml2-devel sqlite sqlite-devel openssl-devel newt-devel kernel-devel \
- libuuid-devel net-snmp-devel xinetd tar make git bzip2 patch libjansson-dev -y 
+ libuuid-devel libsrtp-devel net-snmp-devel xinetd tar make git bzip2 patch libjansson-dev -y 
 
 WORKDIR /tmp/
 
@@ -40,6 +40,7 @@ RUN menuselect/menuselect \
   --disable BUILD_NATIVE \
   --enable chan_sip \
   --enable res_snmp \
+  --enable res_srtp \
   --enable res_http_websocket \
   menuselect.makeopts
 
